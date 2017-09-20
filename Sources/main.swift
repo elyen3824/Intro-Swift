@@ -21,3 +21,16 @@ let width = 94
 let widthLabel = label + String(width)
 
 print(widthLabel)
+
+
+func fib2(n:UInt) -> UInt {
+    println("call fib2(\(String(n))")
+    if(n < 2){
+        return n
+    }
+
+    println("call fib2(\(String(n - 1)) + fib2(\(String(n - 2)))")
+    return fib2(n: n - 1) + (n: n - 2)
+}
+
+println(fib2(10))
