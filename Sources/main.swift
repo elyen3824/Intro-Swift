@@ -34,3 +34,9 @@ print(decrypted ?? "")*/
 
 var pi = Pi()
 print(pi.calculatePi(nTerms: 1000))
+
+var hanoi = HanoiTower()
+hanoi.hanoi()
+print(hanoi.towerA)
+print(hanoi.towerB)
+print(hanoi.towerC)
